@@ -364,7 +364,7 @@ class Dispatcher(metaclass=DispatcherMeta):
 
             func_env_reload_request = req.function_environment_reload_request
 
-            os.environ.clear()
+            #os.environ.clear()
 
             env_vars = func_env_reload_request.environment_variables
 
