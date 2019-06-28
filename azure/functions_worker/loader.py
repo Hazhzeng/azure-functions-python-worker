@@ -63,6 +63,7 @@ def load_function(name: str, directory: str, script_file: str,
 
     fullmodname = '.'.join(modname_parts)
 
+    sys.path_importer_cache.clear()
     mod = importlib.import_module(fullmodname)
 
     func = getattr(mod, entry_point, None)
