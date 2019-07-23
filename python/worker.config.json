@@ -2,7 +2,7 @@
     "description":{
         "language":"python",
         "extensions":[".py"],
-        "defaultExecutablePath":"python",
+        "defaultExecutablePath":"C:\\Users\\zengh\\Projects\\azure-functions-python-worker\\env\\Scripts\\python.exe",
         "defaultWorkerPath":"worker.py"
     }
 }
