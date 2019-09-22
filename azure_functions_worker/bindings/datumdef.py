@@ -34,7 +34,9 @@ class Datum:
                 },
                 body=(
                     Datum.from_typed_data(http.rawBody)
-                    or Datum(type='bytes', value=b'')
+                    or Datum(
+                        type='bytes',
+                        value=getattr(http.body, 'bytes', b''))
                 ),
                 params={
                     k: Datum(v, 'string') for k, v in http.params.items()
